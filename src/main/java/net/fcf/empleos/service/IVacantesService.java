@@ -7,4 +7,5 @@ import net.fcf.empleos.model.Vacante;
 public interface IVacantesService {
 	List<Vacante> buscarTodas();
 	Vacante buscarPorId(Integer idVacante);
+	void save(Vacante vacante);
 }

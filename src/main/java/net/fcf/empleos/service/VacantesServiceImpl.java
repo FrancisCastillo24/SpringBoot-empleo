@@ -2,7 +2,6 @@ package net.fcf.empleos.service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,7 +11,7 @@ import net.fcf.empleos.model.Vacante;
 
 @Service
 public class VacantesServiceImpl implements IVacantesService {
-	
+
 	private List<Vacante> lista = null;
 
 	public VacantesServiceImpl() {
@@ -124,7 +123,7 @@ public class VacantesServiceImpl implements IVacantesService {
 			// Lanzamos un error
 			System.out.println("Error: " + e.getMessage());
 		}
-		
+
 	}
 
 	@Override
@@ -135,17 +134,22 @@ public class VacantesServiceImpl implements IVacantesService {
 
 	@Override
 	public Vacante buscarPorId(Integer idVacante) {
-		
-		for (Vacante cadaVacante : lista){
-			
+
+		for (Vacante cadaVacante : lista) {
+
 			// Si el id del vacante coincide con el id pasado por la url, lo devuelve
-			if(cadaVacante.getId() == idVacante) {
+			if (cadaVacante.getId() == idVacante) {
 				return cadaVacante;
 			}
-			
+
 		}
-		
+
 		return null;
+	}
+
+	@Override
+	public void save(Vacante vacante) {
+		lista.add(vacante);
 	}
 
 }

@@ -10,8 +10,10 @@ public class Vacante {
 	private String description;
 	private Date date;
 	private Double salary;
-	private Integer Featured; // Destacado significa
+	private Integer featured; // Destacado significa
 	private String image = "no-image.png";
+	private String status;
+	private String details;
 
 	// Getter y Setter de la clase Vacante
 	public Integer getId() {
@@ -55,11 +57,11 @@ public class Vacante {
 	}
 
 	public Integer getFeatured() {
-		return Featured;
+		return featured;
 	}
 
 	public void setFeatured(Integer featured) {
-		Featured = featured;
+		this.featured = featured;
 	}
 
 	public String getImage() {
@@ -70,11 +72,31 @@ public class Vacante {
 		this.image = image;
 	}
 
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
 	// ToString de la clase Vacante
 	@Override
 	public String toString() {
-		return "Vacante [id=" + id + ", description=" + description + ", date=" + date + ", salary=" + salary + "]";
+		return "Vacante [id=" + id + ", name=" + name + ", description=" + description + ", date=" + date + ", salary="
+				+ salary + ", featured=" + featured + ", image=" + image + ", status=" + status + ", details=" + details
+				+ "]";
 	}
+
+
 	
 	
 
