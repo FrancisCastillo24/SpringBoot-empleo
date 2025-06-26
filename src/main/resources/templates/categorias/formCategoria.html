@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Creación de Categorías</h1>
+
+	<form th:action="@{/categorias/save}" method="POST">
+	<label for="name">Nombre:</label><br> 
+		<input type="text" id="name" name="name" value=""><br> 
+		
+	<label for="description">Descripción:</label><br>
+		<input type="text" id="description" name="description" value=""><br><br> 
+		
+		<input type="submit" value="Guardar">
+		
+	</form>
+
+</body>
+</html>
