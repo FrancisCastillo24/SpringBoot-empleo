@@ -20,26 +20,7 @@
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">EmpleosApp</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarsExampleDefault"
-			aria-controls="navbarsExampleDefault" aria-expanded="false"
-			aria-label="Toggle navigation"><span
-				class="navbar-toggler-icon"></span></button>
-
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link active" href="#">Inicio</a>
-				</li>
-					<li class="nav-item"><a class="nav-link" href="#">Menu 1</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-			</ul> <a class="btn btn-primary" href="#">Ingresar</a>&nbsp; <a
-				class="btn btn-primary" href="#">Registrarse</a>
-		</div>
-	</nav>
-</header>
+	<header th:insert="fragments/menu :: menu-principal"> </header>
 
 	<main role="main">
 		<hr>
@@ -69,10 +50,10 @@
 						<tbody>
 							<tr th:each="vacante : ${vacantes}">
 								<td></td>
-								<td th:text="${vacante.name}"></td>
-								<td th:text="${vacante.date}"></td>
-								<td th:text="${vacante.status}"></td>
-								<td th:text="${vacante.featured==1 ? 'SI' : 'NO' }">SI</td>
+								<td th:text="${vacante.nombre}"></td>
+								<td th:text="${vacante.fecha}"></td>
+								<td th:text="${vacante.estado}"></td>
+								<td th:text="${vacante.destacado==1 ? 'SI' : 'NO' }">SI</td>
 								<td ><a href="#" class="btn btn-success btn-sm"
 									role="button" title="Editar el registro."><i
 										class="fas fa-pencil-alt" aria-hidden="true"></i></a> <a href="#"
@@ -87,15 +68,7 @@
 
 </main>
 
-	<footer class="footer">
-		<div class="container">
-			<p>&copy; 2023 EmpleosApp, Inc. | WebApp Desarrollada con Spring
-				Boot 3.0.0 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a
-				href="#">Privacy</a> &middot; <a href="#">Terms</a>
-		</p>
-	</div>
-</footer>
-
+	<footer th:insert="fragments/footer :: pie-pagina" class="footer"></footer>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

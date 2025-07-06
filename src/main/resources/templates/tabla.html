@@ -38,15 +38,15 @@
 				
 			</td>
 			<td th:text="${vacante.id}"></td>
-			<td th:text="${vacante.name}"></td>
-			<td th:text="${vacante.description}"></td>
-			<td th:text="${vacante.salary}"></td>
-			<td th:text="${vacante.date}"></td>
+			<td th:text="${vacante.nombre}"></td>
+			<td th:text="${vacante.descripcion}"></td>
+			<td th:text="${vacante.salario}"></td>
+			<td th:text="${vacante.fecha}"></td>
 			
 			<!-- Condicional boleano, si el valor de esa variable es 1 o 2 dará un resultado u otro resaltado -->
 			<td>
-			<span th:if="${vacante.featured == 1}" class="badge bg-success">Sí</span> 
-			<span th:unless="${vacante.featured == 1}" class="badge bg-danger">No</span>
+			<span th:if="${vacante.destacado == 1}" class="badge bg-success">Sí</span> 
+			<span th:unless="${vacante.destacado == 1}" class="badge bg-danger">No</span>
 			</td>
 			<td>
 				<a th:href="@{/vacantes/view/{id} (id=${vacante.id})}" class="btn btn-success">Detalle</a>

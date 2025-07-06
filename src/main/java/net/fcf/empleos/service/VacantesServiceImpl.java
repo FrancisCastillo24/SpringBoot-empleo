@@ -28,90 +28,90 @@ public class VacantesServiceImpl implements IVacantesService {
 			Vacante vacante1 = new Vacante();
 
 			vacante1.setId(1);
-			vacante1.setName("Ingeniero Civil");
-			vacante1.setDescription("Se solicita ingeniero para diseñar puente peatonal");
-			vacante1.setDate(sdf.parse("08-02-2019"));
-			vacante1.setSalary(1200.0);
-			vacante1.setFeatured(1);
-			vacante1.setImage("empresa1.png");
+			vacante1.setNombre("Ingeniero Civil");
+			vacante1.setDescripcion("Se solicita ingeniero para diseñar puente peatonal");
+			vacante1.setFecha(sdf.parse("08-02-2019"));
+			vacante1.setSalario(1200.0);
+			vacante1.setDestacado(1);
+			vacante1.setImagen("empresa1.png");
 
 			// Vacante 2
 			Vacante vacante2 = new Vacante();
 			vacante2.setId(2);
-			vacante2.setName("Diseñador Gráfico");
-			vacante2.setDescription("Diseño de materiales publicitarios y branding corporativo");
-			vacante2.setDate(sdf.parse("15-03-2019"));
-			vacante2.setSalary(950.0);
-			vacante2.setFeatured(1);
-			vacante2.setImage("empresa2.png");
+			vacante2.setNombre("Diseñador Gráfico");
+			vacante2.setDescripcion("Diseño de materiales publicitarios y branding corporativo");
+			vacante2.setFecha(sdf.parse("15-03-2019"));
+			vacante2.setSalario(950.0);
+			vacante2.setDestacado(1);
+			vacante2.setImagen("empresa2.png");
 
 			// Vacante 3
 			Vacante vacante3 = new Vacante();
 			vacante3.setId(3);
-			vacante3.setName("Programador Java");
-			vacante3.setDescription("Desarrollo de aplicaciones backend con Spring Boot");
-			vacante3.setDate(sdf.parse("22-04-2019"));
-			vacante3.setSalary(1600.0);
-			vacante3.setFeatured(0);
-			vacante3.setImage("empresa3.png");
+			vacante3.setNombre("Programador Java");
+			vacante3.setDescripcion("Desarrollo de aplicaciones backend con Spring Boot");
+			vacante3.setFecha(sdf.parse("22-04-2019"));
+			vacante3.setSalario(1600.0);
+			vacante3.setDestacado(0);
+			vacante3.setImagen("empresa3.png");
 
 			// Vacante 4
 			Vacante vacante4 = new Vacante();
 			vacante4.setId(4);
-			vacante4.setName("Administrador de Sistemas");
-			vacante4.setDescription("Gestión de servidores Linux y redes corporativas");
-			vacante4.setDate(sdf.parse("10-05-2019"));
-			vacante4.setSalary(1400.0);
-			vacante4.setFeatured(0);
-			vacante4.setImage("empresa4.png");
+			vacante4.setNombre("Administrador de Sistemas");
+			vacante4.setDescripcion("Gestión de servidores Linux y redes corporativas");
+			vacante4.setFecha(sdf.parse("10-05-2019"));
+			vacante4.setSalario(1400.0);
+			vacante4.setDestacado(0);
+			vacante4.setImagen("empresa4.png");
 
 			// Vacante 5
 			Vacante vacante5 = new Vacante();
 			vacante5.setId(5);
-			vacante5.setName("Contador");
-			vacante5.setDescription("Responsable del área contable y fiscal");
-			vacante5.setDate(sdf.parse("18-06-2019"));
-			vacante5.setSalary(1100.0);
+			vacante5.setNombre("Contador");
+			vacante5.setDescripcion("Responsable del área contable y fiscal");
+			vacante5.setFecha(sdf.parse("18-06-2019"));
+			vacante5.setSalario(1100.0);
 
 			// Vacante 6
 			Vacante vacante6 = new Vacante();
 			vacante6.setId(6);
-			vacante6.setName("Marketing Digital");
-			vacante6.setDescription("Campañas de publicidad en redes sociales y SEO");
-			vacante6.setDate(sdf.parse("25-07-2019"));
-			vacante6.setSalary(1000.0);
+			vacante6.setNombre("Marketing Digital");
+			vacante6.setDescripcion("Campañas de publicidad en redes sociales y SEO");
+			vacante6.setFecha(sdf.parse("25-07-2019"));
+			vacante6.setSalario(1000.0);
 
 			// Vacante 7
 			Vacante vacante7 = new Vacante();
 			vacante7.setId(7);
-			vacante7.setName("Abogado Corporativo");
-			vacante7.setDescription("Asesoría legal y elaboración de contratos");
-			vacante7.setDate(sdf.parse("01-08-2019"));
-			vacante7.setSalary(1700.0);
+			vacante7.setNombre("Abogado Corporativo");
+			vacante7.setDescripcion("Asesoría legal y elaboración de contratos");
+			vacante7.setFecha(sdf.parse("01-08-2019"));
+			vacante7.setSalario(1700.0);
 
 			// Vacante 8
 			Vacante vacante8 = new Vacante();
 			vacante8.setId(8);
-			vacante8.setName("Técnico en Mantenimiento");
-			vacante8.setDescription("Mantenimiento preventivo y correctivo de maquinaria");
-			vacante8.setDate(sdf.parse("12-09-2019"));
-			vacante8.setSalary(900.0);
+			vacante8.setNombre("Técnico en Mantenimiento");
+			vacante8.setDescripcion("Mantenimiento preventivo y correctivo de maquinaria");
+			vacante8.setFecha(sdf.parse("12-09-2019"));
+			vacante8.setSalario(900.0);
 
 			// Vacante 9
 			Vacante vacante9 = new Vacante();
 			vacante9.setId(9);
-			vacante9.setName("Recepcionista");
-			vacante9.setDescription("Atención al cliente y gestión de llamadas");
-			vacante9.setDate(sdf.parse("20-10-2019"));
-			vacante9.setSalary(800.0);
+			vacante9.setNombre("Recepcionista");
+			vacante9.setDescripcion("Atención al cliente y gestión de llamadas");
+			vacante9.setFecha(sdf.parse("20-10-2019"));
+			vacante9.setSalario(800.0);
 
 			// Vacante 10
 			Vacante vacante10 = new Vacante();
 			vacante10.setId(10);
-			vacante10.setName("Arquitecto");
-			vacante10.setDescription("Diseño de planos y supervisión de obra");
-			vacante10.setDate(sdf.parse("30-11-2019"));
-			vacante10.setSalary(1500.0);
+			vacante10.setNombre("Arquitecto");
+			vacante10.setDescripcion("Diseño de planos y supervisión de obra");
+			vacante10.setFecha(sdf.parse("30-11-2019"));
+			vacante10.setSalario(1500.0);
 
 			// Agrego los 4 objetos de tipo Vacante a la lista
 			lista.add(vacante1);

@@ -56,10 +56,10 @@ public class HomeController {
 		Vacante vacante = new Vacante();
 
 		// Inserto datos
-		vacante.setName("Ingeniero de comunicaciones");
-		vacante.setDescription("Se solicita ingeniero para dar soporte a intranet");
-		vacante.setDate(new Date());
-		vacante.setSalary(9700.0);
+		vacante.setNombre("Ingeniero de comunicaciones");
+		vacante.setDescripcion("Se solicita ingeniero para dar soporte a intranet");
+		vacante.setFecha(new Date());
+		vacante.setSalario(9700.0);
 
 		// Lo almacenamos en la variable vacante
 		model.addAttribute("vacante", vacante);
